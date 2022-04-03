@@ -1,0 +1,67 @@
+/* Variables */
+:root {
+  --font-primary: sans-serif;
+  
+}
+
+/* Global */
+a {
+    text-decoration: none;
+}
+
+body {
+  margin: 0 max(10vw, 20px);
+  font-family: var(--font-primary);
+  font-size: 14px;
+}
+
+/* HEADER */
+
+#header-container {
+  height: 120px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* banner */
+
+#banner {
+  height: 50px;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#banner-right {
+  gap: 10px;
+}
+#banner-right > a {
+  padding: 0 15px;
+  margin: 0;
+}
+#banner-right > select {
+  margin: 0 15px 0 0;
+}
+
+/* nav */
+#main-nav {
+  display: flex;
+  height: 70px;
+}
+#nav-left {
+  display: flex;
+  align-items: center;
+}
+#nav-logo {
+  height: 100%;
+}
+#nav-catagories {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+#nav-catagories > li {
+  font-weight: bold;
+}
