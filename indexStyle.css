@@ -42,6 +42,7 @@ button::before {
   height: 3px;
   width: 100%;
   position: absolute;
+  left: 0;
   bottom: 0;
 }
 button:hover {
@@ -100,7 +101,7 @@ button:hover {
 #nav-catagories {
   display: flex;
   list-style: none;
-  gap: 1vw;
+  gap: 2vw;
 }
 
 #nav-right {
@@ -123,17 +124,39 @@ button:hover {
   height: max-content;
   width: 100vw;
   padding: 20px 10vw ;
+  box-shadow: 0 10px 10px rgb(102, 102, 102);
 
   display: flex;
+
+  /* animation */
+  opacity: 0;
+  transform: translateY(-25px);
+  transition:
+  opacity 150ms ease-in-out,
+  transform 150ms ease-in-out;
+}
+
+/* animation */
+.dropdown > .link:focus > .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 #promo-categories {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  margin: 0 2vw;
+  gap: 30px;
+  padding: 0 5vw 0 2vw;
+  border-right: 1px solid rgba(151, 151, 151, 0.534);
 }
 
 #all-categories {
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 0 5vw;
+}
+.grid-head {
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
