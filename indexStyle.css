@@ -69,6 +69,10 @@ button:hover {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  background-color: rgb(236, 236, 236);
+}
+#banner-cta {
+  padding-left: 20px;
 }
 #banner-right {
   gap: 10px;
@@ -123,7 +127,7 @@ button:hover {
   left: 0;
   height: max-content;
   width: 100vw;
-  padding: 20px 10vw ;
+  padding: 20px 10vw;
   box-shadow: 0 10px 10px rgb(102, 102, 102);
 
   display: flex;
@@ -132,12 +136,12 @@ button:hover {
   opacity: 0;
   transform: translateY(-25px);
   transition:
-  opacity 150ms ease-in-out,
-  transform 150ms ease-in-out;
+    opacity 150ms ease-in-out,
+    transform 150ms ease-in-out;
 }
 
 /* animation */
-.dropdown > .link:focus > .dropdown-menu {
+.active {
   opacity: 1;
   transform: translateY(0);
 }
